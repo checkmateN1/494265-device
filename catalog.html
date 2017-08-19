@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Device</title>
+  </head>
+  <body>
+    <header class="main-header"> 
+		<a class="header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="10" height="10" alt="DEVICE">
+        </a>                       
+		
+		<nav class="main-navigation">
+		<div class="user-navigation-header">                
+				<label for="search"><image src="img/search.svg" width="10" height="10"></label> 
+					<input id="search" type="search" name="search">
+					
+				<label for="login-header"><image src="img/login.svg" width="10" height="10"></label> 	
+					<button id="login-header">Войти</button>
+					
+				<label for="compare-header"><image src="img/compare.svg" width="10" height="10"></label> 	
+					<button id="compare-header">Сравнить</button>
+					
+				<label for="shopping-cart-header"><image src="img/shopping-cart.svg" width="10" height="10"></label>	
+					<button id="shopping-cart-header">Корзина</button>
+		</div>		
+		
+		
+			<ul class="site-navigation">
+				<li><a href="#catalog.html">Каталог товаров</a>
+					<ul class="catalog-list">
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Фитнес браслеты</a></li>
+						<li><a href="#">Квадрокоптеры</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Умные часы</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+					</ul></li>
+				<li><a href="#delivery.html">Доставка</a></li>
+				<li><a href="#guarantee.html">Гарантия</a></li>
+				<li><a href="#contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+    </header>
+	
+	
+	<main class="catalog-container">
+		
+		<nav class="catalog-navigation">
+			<h2>Моноподы для селфи</h2>
+			<!-- Пока что не знаю как сделать: либо это вложенный список с рельной навигацией по существующим разделам каталога, либо просто фейковые статиеские ссылки без интерактивности и реального меню с выбором категорий -->
+			<ol class="navigation-links">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog.html">Каталог товаров</a></li>
+				<li><a href="#">Моноподы для селфи</a></li>
+			</ol>
+		</nav>
+		
+		
+			
+		<header class="catalog-header">
+			<div class="left-part">
+				<h3>Фильтр</h3>
+			</div>
+			
+			<div class="rigth-part">
+				<h3>Сортировка:</h3>
+					
+				<input id="orderby-price" type="radio" name="radio-orderby-catalog" value="price" checked>
+					<label for="orderby-price">По цене</label>
+						
+				<input id="orderby-type" type="radio" name="radio-orderby-catalog" value="type">
+					<label for="orderby-type">По типу</label>	
+						
+				<input id="orderby-popularity" type="radio" name="radio-orderby-catalog" value="popularity">
+					<label for="orderby-popularity">По популярности</label>
+					
+				
+				
+				<input id="orderby-up" type="radio" name="radio-orderby-up-down" value="up">
+					<label for="orderby-up"><img src="img/radio-orderby-up.svg" width="10" height="10" alt="orderby up"></label>
+					
+				<input id="orderby-down" type="radio" name="radio-orderby-up-down" value="down" checked>
+					<label for="orderby-down"><img src="img/radio-orderby-down.svg" width="10" height="10" alt="orderby down"></label>
+			</div>		
+		</header>	
+		
+		<section class="catalog-filter left-part">		
+			
+			<section>
+				<h4>Стоимость</h4>
+				<input id="slider-cost"type="range" name="slider-cost" min="0" max="10000" step="1000" value="5000">
+			</section>		
+			
+			<section>
+				<h4>Цвет</h4>
+			
+				<input id="check-color-black" type="checkbox" name="checkbox-color-black" value="black" checked>
+				<label for="check-color-black">Черный</label>
+				
+				<input id="check-color-white" type="checkbox" name="checkbox-color-white" value="white">
+				<label for="check-color-white">Белый</label>
+				
+				<input id="check-color-blue" type="checkbox" name="checkbox-color-blue" value="blue" checked>
+				<label for="check-color-blue">Синий</label>
+				
+				<input id="check-color-red" type="checkbox" name="checkbox-color-red" value="red" checked>
+				<label for="check-color-red">Красный</label>
+				
+				<input id="check-color-pink" type="checkbox" name="checkbox-color-pink" value="pink">
+				<label for="check-color-pink">Розовый</label>
+				
+			</section>
+			
+			<section>
+				<h4>Bluetooth</h4>
+				
+				<input id="bluetooth-yes" type="radio" name="is-bluetooth" value="true" checked>
+				<label for="bluetooth-yes">Есть</label>
+				
+				<input id="bluetooth-no" type="radio" name="is-bluetooth" value="false">
+				<label for="bluetooth-no">Нет</label>
+				
+				<input type="image" src="/img/show-more.png" alt="ПОКАЗАТЬ">
+			</section>		
+		</section>
+		
+		<section class="products-list right-part">
+			
+			<div class="product">
+				<a href="products/selfie_stick111.html">
+					<img src="products/selfie_stick111.png" alt="Любительская селфи-палка">
+				</a>
+				<table>
+					<tr>
+						<td>Любительская селфи-палка</td>
+						<td>500 руб.</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="product">
+				<a href="products/selfie_stick222.html">
+					<img src="products/selfie_stick222.png" alt="Профессиональная селфи-палка">
+				</a>
+				<table>
+					<tr>
+						<td>Профессиональная селфи-палка</td>
+						<td>1500 руб.</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="product">
+				<a href="products/selfie_stick333.html">
+					<img src="products/selfie_stick333.png" alt="Непотопляемая селфи-палка">
+				</a>
+				<table>
+					<tr>
+						<td>Непотопляемая селфи-палка</td>
+						<td>2500 руб.</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="product">
+				<a href="products/selfie_stick444.html">
+					<img src="products/selfie_stick444.png" alt="Селфи-палка &#34Следуй за мной&#34">
+				</a>
+				<table>
+					<tr>
+						<td>Любительская селфи-палка</td>
+						<td>4900 руб.</td>
+					</tr>
+				</table>
+			</div>
+		
+		</section>
+		
+		<nav class="products-list-navigation">
+			
+			<button>НАЗАД</button>
+			<button>ВПЕРЕД</button>
+			
+			<ul class="products-list-pages">   <!-- пока еще не уверен как будут взаимодействовать нумерация страниц и наполнение формы с продуктами -->
+				<li class="active">1</li>		<!-- напрашивается сделать кнопки с js, но пока не умею, и непонятно что с навигацией - ссылки определенно бредовое решение -->	
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</nav>
+	
+	</main>	
+	
+	<footer class="main-footer">
+		<a class="header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="10" height="10" alt="DEVICE">
+        </a> 
+		<p class="text-footer">г.Москва ул. Строителей, 15</p>
+		<p class="text-footer">Тел.: +7(495)495-95-95</p>
+		
+		<nav class="user-navigation-footer">                
+			<label for="login-footer"><image src="img/login.svg" width="10" height="10"></label> 	
+				<button id="login-footer">Войти</button>
+					
+			<label for="compare-footer"><image src="img/compare.svg" width="10" height="10"></label> 	
+				<button id="compare-footer">Сравнить</button>
+				
+			<label for="shopping-cart-footer"><image src="img/shopping-cart.svg" width="10" height="10"></label>	
+				<button id="shopping-cart-footer">Корзина</button>
+		
+			<ul id="service-navigation-footer">
+					<li><a href="#delivery.html">ДОСТАВКА</a></li>
+					<li><a href="#guarantee.html">ГАРАНТИЯ</a></li>
+					<li><a href="#credit.html">КРЕДИТ</a></li>
+			</ul>
+		</nav>
+		
+		<div class="footer-social">
+			<a class="social-button" href="#">Фейсбук</a>
+			<a class="social-button" href="#">Инстаграм</a>
+			<a class="social-button" href="#">Твиттер</a>
+		</div>
+	</footer>
+	
+  </body>
+</html>	
+		
+		
+		
+		
