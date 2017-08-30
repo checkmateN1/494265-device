@@ -5,25 +5,28 @@
     <title>Device</title>
      <link rel="stylesheet" href="css/normalize.css">
      <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
   </head>
   <body>
     <header class="main-header"> 
-		<a class="header-logo" href="index.html"><img src="img/logo-header.png"></a>                       
+		<a class="header-logo" href="index.html"><img src="img/logo-header.png"></a>         
 		
 		<nav class="main-navigation">
 			<div class="user-navigation">                
-				<input class="search" type="search" name="search">
-				<input class="enter-search" type="submit" name="enter-search" value="Поиск">
+				<div class="search-wrapper">
+					<input class="search" type="search" name="search" placeholder="Поиск по сайту">
+					<input class="enter-search" type="submit" name="enter-search" value="Найти">
+				</div>
 				<ul>
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
+					<li><a class="user" href="#">Войти</a></li>
+					<li><a class="compare" href="#">Сравнить</a></li>
+					<li><a class="cart" href="#">Корзина</a></li>
 				</ul>
 			</div>		
 		
 		
 			<ul class="site-navigation">
-				<li><a href="catalog.html">Каталог товаров</a>
+				<li><a class="catalog-product" href="catalog.html">Каталог товаров</a>
 					<ul class="catalog-list">
 						<li><a href="#">Виртуальная реальность</a></li>
 						<li><a href="#">Фитнес браслеты</a></li>
@@ -62,22 +65,21 @@
 			<div class="rigth-part">
 				<h3>Сортировка:</h3>
 					
-				<input id="orderby-price" type="radio" name="radio-orderby-catalog" value="price" checked>
-					<label for="orderby-price">По цене</label>
+				<input id="orderby-price" type="radio" name="radio-orderby-catalog" value="price" hidden checked>
+				<label for="orderby-price">По цене</label>
 						
-				<input id="orderby-type" type="radio" name="radio-orderby-catalog" value="type">
-					<label for="orderby-type">По типу</label>	
+				<input id="orderby-type" type="radio" name="radio-orderby-catalog" value="type" hidden>
+				<label for="orderby-type">По типу</label>	
 						
-				<input id="orderby-popularity" type="radio" name="radio-orderby-catalog" value="popularity">
-					<label for="orderby-popularity">По популярности</label>
+				<input id="orderby-popularity" type="radio" name="radio-orderby-catalog" value="popularity" hidden>
+				<label for="orderby-popularity">По популярности</label>
 					
-				
-				
-				<input id="orderby-up" type="radio" name="radio-orderby-up-down" value="up">
-					<label for="orderby-up"><img src="img/radio-orderby-up.svg" width="10" height="10" alt="orderby up"></label>
+			
+				<input id="orderby-up" type="radio" name="radio-orderby-up-down" value="up" hidden>
+				<label for="orderby-up"><img src="img/svg/icon-up-dir.svg" width="10" height="10" alt="orderby up"></label>
 					
-				<input id="orderby-down" type="radio" name="radio-orderby-up-down" value="down" checked>
-					<label for="orderby-down"><img src="img/radio-orderby-down.svg" width="10" height="10" alt="orderby down"></label>
+				<input id="orderby-down" type="radio" name="radio-orderby-up-down" value="down" hidden checked>
+				<label for="orderby-down"><img src="img/svg/icon-down-dir.svg" width="10" height="10" alt="orderby down"></label>  
 			</div>		
 		</header>	
 		
@@ -117,9 +119,11 @@
 					
 					<input id="bluetooth-no" type="radio" name="is-bluetooth" value="false">
 					<label for="bluetooth-no">Нет</label>
-					
-					<input type="image" src="/img/show-more.png" alt="показать">
 				</fieldset>	
+				
+				<div class="button-wrapper wrapper-220">
+					<a class="read-more" href="#">показать</a>
+				</div>
 			</form>			
 		</section>
 		
@@ -129,48 +133,40 @@
 				<a href="products/selfie_stick111.html">
 					<img src="img/products/selfie_stick111.png" alt="Любительская селфи-палка">
 				</a>
-				<table>
-					<tr>
-						<td>Любительская селфи-палка</td>
-						<td>500 руб.</td>
-					</tr>
-				</table>
+				<div>
+					<b>Любительская селфи-палка</b>
+					<p>500 руб.</p>
+				</div>
 			</div>
 			
 			<div class="product">
 				<a href="products/selfie_stick222.html">
 					<img src="img/products/selfie_stick222.png" alt="Профессиональная селфи-палка">
 				</a>
-				<table>
-					<tr>
-						<td>Профессиональная селфи-палка</td>
-						<td>1500 руб.</td>
-					</tr>
-				</table>
+				<div>
+					<b>Профессиональная селфи-палка</b>
+					<p>1500 руб.</p>
+				</div>
 			</div>
 			
 			<div class="product">
 				<a href="products/selfie_stick333.html">
 					<img src="img/products/selfie_stick333.png" alt="Непотопляемая селфи-палка">
 				</a>
-				<table>
-					<tr>
-						<td>Непотопляемая селфи-палка</td>
-						<td>2500 руб.</td>
-					</tr>
-				</table>
+				<div>
+					<b>Непотопляемая селфи-палка</b>
+					<p>2500 руб.</p>
+				</div>
 			</div>
 			
 			<div class="product">
 				<a href="products/selfie_stick444.html">
 					<img src="img/products/selfie_stick444.png" alt="Селфи-палка &#34Следуй за мной&#34">
 				</a>
-				<table>
-					<tr>
-						<td>Любительская селфи-палка</td>
-						<td>4900 руб.</td>
-					</tr>
-				</table>
+				<div>
+					<b>Селфи-палка «Следуй за мной»</b>
+					<p>4900 руб.</p>
+				</div>
 			</div>
 		
 		</section>
@@ -178,17 +174,25 @@
 		<nav class="products-list-navigation">
 			
 			<button>назад</button>
+						
+			<div class="list-pages">   
+				<input id="button-1" type="radio" name="button-numbers" value="1" hidden checked>
+				<label for="button-1">1</label>
+				
+				<input id="button-2" type="radio" name="button-numbers" value="2" hidden>
+				<label for="button-2">2</label>
+
+				<input id="button-3" type="radio" name="button-numbers" value="3" hidden>
+				<label for="button-3">3</label>
+			</div>
+
 			<button>вперед</button>
-			
-			<ul class="products-list-pages">   <!-- пока еще не уверен как будут взаимодействовать нумерация страниц и наполнение формы с продуктами -->
-				<li class="active">1</li>		<!-- напрашивается сделать кнопки с js, но пока не умею, и непонятно что с навигацией - ссылки определенно бредовое решение -->	
-				<li>2</li>
-				<li>3</li>
-			</ul>
 		</nav>
 	
 	</main>	
 	
+	
+
 	<footer class="main-footer">
 		<a class="footer-logo" href="index.html"><img src="img/logo-footer.png"></a>  
 		
@@ -197,12 +201,12 @@
 		
 		<nav class="navigation-footer">                
 			<ul class="user-navigation">                
-				<li><a href="#">Войти</a></li>
-				<li><a href="#">Сравнить</a></li>
-				<li><a href="#">Корзина</a></li>
+				<li><a class="user" href="#">Войти</a></li>
+				<li><a class="compare" href="#">Сравнить</a></li>
+				<li><a class="cart" href="#">Корзина</a></li>
 			</ul>
 		
-			<ul id="service-navigation-footer">
+			<ul class="service-navigation-footer">
 					<li><a href="#delivery.html">Доставка</a></li>
 					<li><a href="#guarantee.html">Гарантия</a></li>
 					<li><a href="#credit.html">Кредит</a></li>
@@ -210,9 +214,9 @@
 		</nav>
 		
 		<div class="footer-social">
-			<a class="social-button" href="#">Фейсбук</a>
-			<a class="social-button" href="#">Инстаграм</a>
-			<a class="social-button" href="#">Твиттер</a>
+			<a class="social-button" href="#"><img src="img/svg/fb.svg" alt="facebook page"></a>
+			<a class="social-button" href="#"><img src="img/svg/instagram.svg" alt="instagram"></a>
+			<a class="social-button" href="#"><img src="img/svg/twitter.svg" alt="twitter"></a>
 		</div>
 		
 		<a class="social-button" href="https://htmlacademy.ru" target="_blank"><img src="img/html-academy-logo.png"></a>
