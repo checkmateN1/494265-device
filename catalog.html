@@ -9,13 +9,13 @@
   </head>
   <body>
         <div class="container">
-    	<header class="main-header"> 
+    	<header class="main-header">
 			<div class="catalog-header-background"></div>
 			<div class="grid"></div>
-			<a class="header-logo" href="index.html"><img src="img/logo-header.png"></a>         
-			
+			<a class="header-logo" href="index.html"><img src="img/logo-header.png"></a>
+
 			<nav class="main-navigation">
-				<div class="user-navigation">                
+				<div class="user-navigation">
 					<div class="left-part">
 						<div class="search-wrapper">
 							<input class="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -29,8 +29,8 @@
 							<li><a class="cart" href="#">Корзина</a></li>
 						</ul>
 					</div>
-				</div>		
-			
+				</div>
+
 				<div class="site-navigation">
 					<div class="left-part">
 						<div class="hidden-wrapper">
@@ -65,7 +65,7 @@
 			</nav>
     	</header>
 		</div>
-	
+
 	
 	<main>
 		<div class="container clearfix">
@@ -88,24 +88,18 @@
 				<div class="catalog-left-part">
 					<h3>Фильтр:</h3>
 				</div>
-				<div class="catalog-rigth-part">
+				<div class="catalog-right-part">
 					<h3>Сортировка:</h3>
-						
-					<input id="orderby-price" type="radio" name="radio-orderby-catalog" value="price" hidden checked>
-					<label for="orderby-price">По цене</label>
-							
-					<input id="orderby-type" type="radio" name="radio-orderby-catalog" value="type" hidden>
-					<label for="orderby-type">По типу</label>	
-							
-					<input id="orderby-popularity" type="radio" name="radio-orderby-catalog" value="popularity" hidden>
-					<label for="orderby-popularity">По популярности</label>
+
+					<ul>
+						<li><a class="active-a" href="#">По цене</a></li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По популярности</a></li>
+					</ul>
 						
 					<div class="radio-wrapper">
-						<input id="orderby-up" type="radio" name="radio-orderby-up-down" value="up" hidden>
-						<label for="orderby-up"><img src="img/svg/icon-up-dir.svg" width="10" height="10" alt="orderby up"></label>
-							
-						<input id="orderby-down" type="radio" name="radio-orderby-up-down" value="down" hidden checked>
-						<label for="orderby-down"><img src="img/svg/icon-down-dir.svg" width="10" height="10" alt="orderby down"></label>  
+						<a href="#"><img src="img/svg/icon-up-dir.svg" width="12" height="12" alt="orderby up"></a>
+						<a class="active-r" href="#"><img src="img/svg/icon-down-dir.svg" width="12" height="12" alt="orderby down"></a>
 					</div>
 				</div>
 			</div>		
@@ -213,7 +207,7 @@
 							</div>
 						</div>
 						
-						<div class="product">
+						<div class="product new-product">
 							<div class="box-img">
 								<div class="product-hover-menu">
 									<a class="button-wrapper wrapper-200 product-to-cart" href="#">В корзину</a>
@@ -236,14 +230,11 @@
 							<button>назад</button>
 						</a>			
 						<div class="list-pages">   
-							<input id="button-1" type="radio" name="button-numbers" value="1" hidden checked>
-							<label for="button-1"><a href="#">1</a></label>
-							
-							<input id="button-2" type="radio" name="button-numbers" value="2" hidden>
-							<label for="button-2"><a href="#">2</a></label>
-
-							<input id="button-3" type="radio" name="button-numbers" value="3" hidden>
-							<label for="button-3"><a href="#">3</a></label>
+							<ul>
+								<li><a class="active-a" href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
 						</div>
 						<a class="next-button" href="#">
 							<button>вперед</button>
